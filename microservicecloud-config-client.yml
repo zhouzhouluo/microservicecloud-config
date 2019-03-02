@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active:
+     - dev
+---
+server:
+  port: 8201
+spring:
+  profiles: dev
+  application:
+    name: zhou-test
+---
+server:
+  port: 8202
+spring:
+  profiles: test
+  application:
+    name: zhou-test
